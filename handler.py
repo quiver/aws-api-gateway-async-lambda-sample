@@ -1,12 +1,7 @@
 import time
 
-def f_sync(event, context):
+def func(event, context):
     time.sleep(3)
     return {'statusCode': 200,
-            'body': 'sync'}
+            'body': 'ok'}
 
-
-def f_async(event, context):
-    time.sleep(3)
-    return {'statusCode': 200,
-            'body': 'async'}
